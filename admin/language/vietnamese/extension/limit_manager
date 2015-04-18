@@ -1,0 +1,23 @@
+<?php
+// Heading
+$_['heading_title']    = 'Quản lí giới hạn';
+
+// Text
+$_['text_install']     = 'Cài đặt';
+$_['text_uninstall']   = 'Gỡ bỏ';
+$_['text_home']   = 'Trang chủ';
+$_['text_module_name']   = 'Tên module';
+$_['text_layout']   = 'Giao diện';
+$_['text_position']   = 'Vị trí';
+$_['text_limit']   = 'Giới hạn';
+$_['text_no_results']   = 'Không tìm thấy kết quả nào';
+$_['button_cancel']   = 'Hùy';
+$_['button_save']   = 'Lưu';
+
+// Column
+$_['column_name']      = 'Tên Mô-đun';
+$_['column_action']    = 'Thao tác';
+
+// Error
+$_['error_permission'] = 'Cảnh báo: Bạn không có quyền sửa đổi các mô-đuns!';
+?>

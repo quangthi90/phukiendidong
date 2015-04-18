@@ -1,0 +1,247 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/***** General Styles ******/
+
+.clear {
+	clear:both;
+}
+
+body {
+	background: #fff url(../image/bg_exception.jpg) repeat-x center top;
+}
+
+ul {
+	list-style-type:disc;
+	margin:0px 0px 20px 40px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	color:#414141;
+	line-height:18px;
+}
+
+ol {
+	list-style-type:decimal;
+	margin:0px 0px 20px 40px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	color:#414141;
+	line-height:18px;
+}
+
+blockquote {
+	margin-left:20px;
+	border-left:3px solid #999;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	color:#414141;
+	margin-bottom:25px;
+	line-height:18px;
+	padding-left:10px;
+}
+
+a:link, a:active, a:hover, a:visited {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	color:#975429;
+	margin-bottom:25px;
+	line-height:18px;
+}
+
+p {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 13px;
+	font-weight:normal;
+	color:#414141;
+	margin-bottom:25px;
+	line-height:18px;
+}
+
+/***** Main Content Styles ******/
+
+#wrapper {
+	width:960px;
+	margin:0px auto;
+	box-shadow: 0px 2px 1px #ddd;
+}
+
+#logo {
+	margin: 30px auto 2px auto;
+	padding: 10px 0px;
+	text-align:center;
+	display: block;
+	background: #fff;
+	width: 960px;
+}
+
+#main {
+	background:#FFF;
+	width: 958px;
+	position: relative;
+	margin: 0px auto;
+	padding: 30px 0px 0px 0px;
+	border: 1px solid #ddd;
+	border-top: none;
+	overflow: hidden;
+}
+
+#leftcolumn {
+	width: 310px;
+	height: 300px;
+	float:left;
+	padding:5px;
+	background: transparent url(../image/sorry.jpg) no-repeat 0;
+}
+
+h1 {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:150px;
+	font-weight:normal;
+	color:#d4d7dd;
+	margin:0px;
+}
+
+h1 small {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:24px;
+	font-weight:normal;
+	color:#d4d7dd;
+	margin:0px;
+	display:block;
+}
+
+#searcharea {
+	margin:30px 0px;
+	vertical-align:middle;
+	position:relative;
+}
+
+#rightcolumn {
+	width: 540px;
+	float:left;
+	padding: 10px 40px;
+	border-left:1px solid #d4d7dd;	
+}
+
+h2 {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:24px;
+	font-weight:normal;
+	color:#414141;
+	margin-bottom:15px;
+}
+
+h3 {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	color:#975429;
+	margin-bottom:10px;
+	text-transform:uppercase;
+}
+
+.navigation {
+	list-style:none;
+	float:left;
+	width:250px;
+	margin:10px 7px;
+}
+
+.navigation li {
+	border-top:1px solid #d4d7dd;
+	height:20px;
+	padding:5px;
+	cursor:pointer;
+}
+
+.navigation li.last {
+	border-bottom:1px solid #d4d7dd;
+}
+
+.navigation li a:link, .navigation li a:active, .navigation li a:visited {
+	text-decoration:none;
+	color:#414141;
+	width:250px;
+	padding:5px;
+}
+
+.navigation li a:hover{
+	color: #1B76BB;
+}
+
+
+/***** Footer Styles ******/
+
+#footer {
+	padding: 15px;
+	margin: 0px;
+	border-top:1px solid #d4d7dd;
+	overflow: hidden;
+}
+
+#copyright {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 11px;
+	color:#414141;
+	float:left;
+	font-weight: bold;
+}
+
+#footer_navigation {
+	list-style:none;
+	float: right;
+	margin:-5px;
+	padding:0px;
+	text-align:right;
+}
+
+#footer_navigation li {
+	display:inline;
+	padding:0px;	
+}
+
+#footer_navigation li a:link, #footer_navigation li a:active, #footer_navigation li a:visited {
+	text-decoration:none;
+	color:#414141;
+	margin:0px 5px;	
+	font-size: 12px;	
+	padding:0px;	
+}
+
+#footer_navigation li a:hover {
+	text-decoration:underline;
+}

@@ -1,0 +1,35 @@
+Options +FollowSymlinks
+
+# Prevent Directoy listing 
+Options -Indexes
+
+# Prevent Direct Access to files
+<FilesMatch "\.(tpl|ini|log)">
+ Order deny,allow
+ Deny from all
+</FilesMatch>
+
+# SEO URL Settings
+RewriteEngine On
+# If your opencart installation does not run on the main web folder make sure you folder it does run in ie. / becomes /shop/ 
+
+RewriteBase /projectfinish/website/phukiendidong/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^?]*) index.php?_route_=$1 [L,QSA]
+
+### Additional Settings that may need to be enabled for some servers 
+### Uncomment the commands by removing the # sign in front of it.
+### If you get an "Internal Server Error 500" after enabling any of the following settings, restore the # as this means your host doesn't allow that.
+
+#php_flag register_globals off
+
+#php_flag magic_quotes_gpc Off
+
+#php_value upload_max_filesize 999M
+
+#php_value post_max_size 999M
+
+#php_value max_execution_time 200
+
+#php_value max_input_time 200
