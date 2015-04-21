@@ -353,6 +353,12 @@ class ControllerCatalogProduct extends Controller {
 				'href' => $this->url->link('catalog/product/update', 'token=' . $this->session->data['token'] . '&product_id=' . $result['product_id'] . $url, 'SSL')
 			);
 			
+
+				$action[] = array(
+					'text' => $this->language->get('text_add'),
+					'href' => $this->url->link('catalog/barcode', 'token=' . $this->session->data['token'] . '&product_id=' . $result['product_id'] . $url, 'SSL')
+				);
+			
 			if ($result['image'] && file_exists(DIR_IMAGE . $result['image'])) {
 				$image = $this->model_tool_image->resize($result['image'], 40, 40);
 			} else {

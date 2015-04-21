@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+	<id>VQMOD BARCODE SCANNER</id>
+	<version>1.5.x</version>
+	<vqmver required="true">2.4.0</vqmver>
+	<author>Bommer-lqthi.khtn@gmail.com</author>
+	
+	<file name="admin/controller/catalog/product.php">
+		<operation>
+			<search position="before"><![CDATA[
+				if ($result['image'] && file_exists(DIR_IMAGE . $result['image'])) {
+			]]></search>
+			<add><![CDATA[
+				$action[] = array(
+					'text' => $this->language->get('text_add'),
+					'href' => $this->url->link('catalog/barcode', 'token=' . $this->session->data['token'] . '&product_id=' . $result['product_id'] . $url, 'SSL')
+				);
+			]]></add>
+		</operation>
+	</file>
+	<file name="admin/language/english/catalog/product.php">
+		<operation>
+			<search position="after"><![CDATA[
+				$_['text_amount']
+			]]></search>
+			<add><![CDATA[
+				$_['text_add']               = 'Add Barcode';
+			]]></add>
+		</operation>
+	</file>
+	<file name="admin/language/vietnamese/catalog/product.php">
+		<operation>
+			<search position="after"><![CDATA[
+				$_['text_amount']
+			]]></search>
+			<add><![CDATA[
+				$_['text_add']               = 'Thêm mã vạch';
+			]]></add>
+		</operation>
+	</file>
+</modification>
