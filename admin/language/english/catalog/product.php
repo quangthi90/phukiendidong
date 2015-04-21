@@ -14,6 +14,7 @@ $_['text_option']            = 'Option';
 $_['text_option_value']      = 'Option Value';
 $_['text_percent']           = 'Percentage';
 $_['text_amount']            = 'Fixed Amount';
+$_['text_add']               = 'Add Barcode';
 
 // Column
 $_['column_name']            = 'Product Name';

@@ -15,6 +15,7 @@ $_['text_option_value']      = 'Giá trị tùy chọn';
 $_['text_percent']           = 'Tỷ lệ phần trăm';
 $_['text_amount']            = 'Số lượng Cố định';
 $_['text_choose_label']            = 'Chọn nhãn';
+$_['text_add']               = 'Thêm mã vạch';
 
 // Column
 $_['column_name']            = 'Tên sản phẩm';
